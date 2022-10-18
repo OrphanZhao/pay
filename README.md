@@ -8,6 +8,10 @@
 
 * `yarn start`
 
+## 更新API
+
+* `yarn generate`
+
 ## 打包构建
 
 * `yarn build`

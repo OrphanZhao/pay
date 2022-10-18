@@ -2,10 +2,11 @@ import type { CodegenConfig } from '@graphql-codegen/cli';
 
 const config: CodegenConfig = {
   overwrite: true,
-  schema: '../schema.graphql',
+  schema: 'http://localhost:3000/graphql',
   documents: './src/**/*.graphql',
   generates: {
-    'src/generated/graphql.ts': {
+    // TODO 单个文件 `yml` 正常
+    'src/generated/': {
       preset: 'client',
       plugins: ['typescript', 'typescript-operations', 'typescript-urql'],
     },
