@@ -24,7 +24,6 @@
     "typings.d.ts"
   ],
   "exclude": [
-    "./src/generated/graphql.ts",
     "node_modules",
     "lib",
     "es",
