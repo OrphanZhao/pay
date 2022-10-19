@@ -7,4 +7,4 @@ package.json
 .umi-production
 .umi-test
 dist
-src/generated/**
+src/generated/*.ts
