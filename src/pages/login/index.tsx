@@ -1,6 +1,6 @@
+import { Space } from 'antd';
 import { FC } from 'react';
 import { Link, useModel } from 'umi';
-import { Space } from 'antd';
 
 interface IProps {}
 

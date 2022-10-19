@@ -1,6 +1,6 @@
-import { FC } from 'react';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
+import { FC } from 'react';
 
 interface IProps {}
 

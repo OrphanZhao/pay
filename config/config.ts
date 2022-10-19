@@ -1,7 +1,7 @@
-import { defineConfig, utils } from 'umi';
 import path from 'path';
-import routes from './routes';
+import { defineConfig } from 'umi';
 import proxy from './proxy';
+import routes from './routes';
 
 export const supportedLocales = ['zh-CN'];
 
@@ -30,9 +30,7 @@ export default defineConfig({
       .use(
         new webpack.ContextReplacementPlugin(
           /^date-fns[/\\]locale$/,
-          new RegExp(
-            `\\.[/\\\\](${supportedLocales.join('|')})[/\\\\]index\\.js$`,
-          ),
+          new RegExp(`\\.[/\\\\](${supportedLocales.join('|')})[/\\\\]index\\.js$`),
         ),
       );
   },

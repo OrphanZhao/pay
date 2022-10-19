@@ -1,11 +1,6 @@
-import {
-  createClient,
-  dedupExchange,
-  cacheExchange,
-  errorExchange,
-} from 'urql';
+import { Client } from '@urql/core/dist/types';
 import { multipartFetchExchange } from '@urql/exchange-multipart-fetch';
-import { Client, PromisifiedSource } from '@urql/core/dist/types';
+import { cacheExchange, createClient, dedupExchange, errorExchange } from 'urql';
 
 export const client = createClient({
   url: '/graphql',

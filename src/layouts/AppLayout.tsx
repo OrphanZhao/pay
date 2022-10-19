@@ -1,6 +1,6 @@
-import { FC } from 'react';
 import AntdProvider from '@/provider/AntdProvider';
 import UrqlProvider from '@/provider/UrqlProvider';
+import { FC } from 'react';
 
 interface IProps {}
 

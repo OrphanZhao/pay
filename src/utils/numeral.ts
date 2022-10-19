@@ -20,5 +20,4 @@ numeral.register('locale', 'chs', {
 });
 numeral.locale('chs');
 
-export const yuan = (val: string | number) =>
-  val != null ? numeral(val).format('$0,0.00') : '';
+export const yuan = (val: string | number) => (val != null ? numeral(val).format('$0,0.00') : '');
